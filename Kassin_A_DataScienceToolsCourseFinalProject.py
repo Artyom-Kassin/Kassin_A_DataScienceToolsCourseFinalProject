@@ -5,6 +5,8 @@ import requests
 import pandas as pd
 import xlrd
 import matplotlib.pyplot as plt
+import sqlite3
+import investpy
 
 #Searching for current palm oil price in MYR
 #Checking a scraping permission
@@ -163,8 +165,3 @@ df6.to_sql('ZNST', conn)
 #Make a plot of price changes time series
 df6.plot()
 plt.show()
-
-
-
-
-
